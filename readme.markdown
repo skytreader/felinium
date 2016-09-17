@@ -6,7 +6,7 @@ Check the branches to see the examples. Table of contents below; the "chapters"
 are actual branch names you can checkout. All Python files are found in the
 `felinium` directory.
 
-## 1-quick-demo
+# Quick Demo
 
 Introducing what Selenium does. See `ghostwriter.py`.
 
@@ -21,7 +21,7 @@ Links:
 
 - [Selenium Selectors](http://selenium-python.readthedocs.io/locating-elements.html#locating-elements)
 
-## 2-arte-angular
+# Arte Angular
 
 Motivating question: Is our UI too fancy for Selenium?
 
@@ -29,4 +29,5 @@ How to interact with `ui-select-2`/`kb-mobile-prefix-selector`? See `uiselect2.p
 
 What happens when the selector applies to more than one element? [You can locate
 via CSS selectors](https://www.kalibrr.com/employers/signup) but it is still not
-as flexible as jQuery. See `multielement.py`.
+as flexible as jQuery. You could use XPath but it is messy. jQuery is the best.
+See `multielement.py`.
