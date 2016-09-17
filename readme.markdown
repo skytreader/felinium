@@ -2,9 +2,15 @@
 
 Selenium for cats, or, Chad does not code while other people are watching.
 
-Check the branches to see the examples. Table of contents below; the "chapters"
-are actual branch names you can checkout. All Python files are found in the
-`felinium` directory.
+Set-up
+
+    mkvirtualenv selenium
+    pip install -r requirements.txt
+    cd html
+    python -m SimpleHTTPServer 16981 > /dev/null 2>&1&
+    cd ..
+
+Or you can leave `SimpleHTTPServer` running in anoher terminal tab.
 
 # Quick Demo
 
@@ -23,9 +29,10 @@ Links:
 
 # Arte Angular
 
-Motivating question: Is our UI too fancy for Selenium?
+Motivating question: Is our UI too fancy for Selenium? For instance, dealing with
+`select` elements is easy---see `plain_select.py`.
 
-How to interact with `ui-select-2`/`kb-mobile-prefix-selector`? See `uiselect2.py`
+But we use `ui-select2`! What do? See `uiselect2.py`
 
 What happens when the selector applies to more than one element? [You can locate
 via CSS selectors](https://www.kalibrr.com/employers/signup) but it is still not
