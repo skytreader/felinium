@@ -38,7 +38,7 @@ Motivating question: Is our UI too fancy for Selenium? For instance, dealing wit
 
 But we use `ui-select2`! What do? See `uiselect2.py`
 
-**Heart-attack pop quiz?** How about file uploads? Keep in mind that, at least for
+**Heart-attack pop quiz:** How about file uploads? Keep in mind that, at least for
 candidate resume, the upload functionality is wrapped inside a profiler. (Bawal
 sumagot: Tim, Cassie).
 
