@@ -37,9 +37,29 @@ But we use `ui-select2`! What do? See `uiselect2.py`
 
 What happens when the selector applies to more than one element? [You can locate
 via CSS selectors](https://www.kalibrr.com/employers/signup) but it is still not
-as flexible as jQuery. You could use XPath but it is messy. jQuery is the best.
+as flexible as jQuery. You could use XPath but it is messy. jQuery is the bestest!!!!111!
 See `multielement.py`.
 
 How about links that open new tabs/windows, of which we have plenty?! See
 `new_window.py`. But, just by using the code we have now, this is prone to
 memory leaks.
+
+## Logging-in
+
+(Source not included.)
+
+There are two ways:
+
+1. Log-in "like a real user" by loading the log-in page, selecting input boxes,
+and sending them your user credentials.
+2. [Setting the cookies for yourself](http://selenium-python.readthedocs.io/navigating.html#cookies).
+
+## Miscellaneous stuff that may come in useful
+
+- As a real user, you can execute JavaScript in the browser's console. In
+Selenium, you can do the same via the driver's `execute_async_script` and
+`execute_script` methods.
+- Selenium does not play well with unexpected browser dialogs (alerts, prompts,
+etc.).
+
+# Unit Testing
