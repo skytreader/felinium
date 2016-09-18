@@ -1,6 +1,7 @@
 # felinium
 
-Selenium for cats, or, Chad does not code while other people are watching.
+Selenium for cats, or, Chad does not code while other people are watching. This
+was not designed without Chad speaking in the background.
 
 Set-up
 
@@ -21,7 +22,7 @@ Notes:
 - `driver.get` waits until the moment the browser's `onload` event has fired.
 This is problematic if your page fetches data even after `onload`, say via AJAX.
 - What happens when an error occurs before `driver.close()`? How is that relevant
-to us?
+for unit testing?
 
 Links:
 
@@ -38,3 +39,7 @@ What happens when the selector applies to more than one element? [You can locate
 via CSS selectors](https://www.kalibrr.com/employers/signup) but it is still not
 as flexible as jQuery. You could use XPath but it is messy. jQuery is the best.
 See `multielement.py`.
+
+How about links that open new tabs/windows, of which we have plenty?! See
+`new_window.py`. But, just by using the code we have now, this is prone to
+memory leaks.

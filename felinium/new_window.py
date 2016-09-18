@@ -9,10 +9,8 @@ def alternate_approach(driver):
 if __name__ == "__main__":
     driver = webdriver.Firefox()
     driver.get("https:/www.kalibrr.com/job-board")
-    alternate_approach(driver)
-    #driver.find_element_by_class_name("link-dotted").click()
-    #print driver.window_handles
-    #for handle in driver.window_handles:
-    #    driver.switch_to_window(handle)
+    driver.find_element_by_class_name("link-dotted").click()
+    driver.switch_to_window(driver.window_handles[1])
     time.sleep(3)
+    # But old windows will not be closed :(
     driver.close()
