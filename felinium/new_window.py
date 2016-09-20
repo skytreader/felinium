@@ -9,7 +9,7 @@ def alternate_approach(driver):
 if __name__ == "__main__":
     driver = webdriver.Firefox()
     print "Getting job board..."
-    driver.get("https:/www.kalibrr.com/job-board")
+    driver.get("http://127.0.0.1:18000/job-board")
     print "Clicking first company name..."
     driver.find_element_by_class_name("link-dotted").click()
     driver.switch_to_window(driver.window_handles[1])
